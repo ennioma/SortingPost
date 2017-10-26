@@ -11,9 +11,9 @@ import XCTest
 
 class SortingTestsTests: XCTestCase {
     
-    var inputArray: [Int] = [100, 1, 2, 0, 50, 23, 22, 21, 10, 101]
-    var ascending: [Int] = [0, 1, 2, 10, 21, 22, 23, 50, 100, 101]
-    var descending: [Int] = [101, 100, 50, 23, 22, 21, 10, 2, 1, 0]
+    var inputArray: [Int] = [100, 1, 2, 0, 50, 23, 22, 21, 10, 101, 0]
+    var ascending: [Int] = [0, 0, 1, 2, 10, 21, 22, 23, 50, 100, 101]
+    var descending: [Int] = [101, 100, 50, 23, 22, 21, 10, 2, 1, 0, 0]
 
     // MARK: - Bubble Sort
     func testBubbleSortAscendingWithoutArgs() {

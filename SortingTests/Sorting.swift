@@ -143,7 +143,7 @@ extension Array where Element == Int {
         buckets.enumerated().forEach { index, value in
             guard value > 0 else { return }
             
-            out.append(contentsOf: [Int](repeating: index, count: buckets[value]))
+            out.append(contentsOf: [Int](repeating: index, count: value))
         }
 
         return reverse == true ? out.reversed() : out
